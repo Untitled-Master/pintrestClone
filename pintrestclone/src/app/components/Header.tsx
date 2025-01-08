@@ -2,8 +2,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { HiSearch,HiBell,HiChat } from "react-icons/hi"
-import { useSession, signIn, signOut } from "next-auth/react"
-
+import { useSession, signIn } from "next-auth/react"
+/*add signOut later */
 function Header() {
   const { data: session } = useSession();
   console.log(session)
